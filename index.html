@@ -157,6 +157,15 @@
     color:var(--ink-soft);
     margin-top:.45rem;
   }
+  .cover-credit{
+    font-family:'Cormorant',serif;
+    font-size:.6rem;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    opacity:.72;
+    margin-top:.6rem;
+    line-height:1.4;
+  }
   .cover-rule{
     width:38px;height:1px;background:var(--gold);
     margin:.7rem auto;opacity:.6;
@@ -597,7 +606,8 @@ PAGES.forEach((p,i)=>{
       <div class="page-art">${p.art}</div>
       <div class="cover-title">A Cosmic Crossing</div>
       <div class="cover-rule"></div>
-      <div class="cover-sub">a river story: to those dancing in the realm of Lila</div>`;
+      <div class="cover-sub">a river story: to those dancing in the realm of Lila</div>
+      <div class="cover-credit">story experienced and recounted with love &amp; tenderness by RR;<br>visuals rendered with RR guidance by Claude, AI</div>`;
   } else if(p.memorial){
     pg.className = 'page memorial-page';
     pg.innerHTML = `
